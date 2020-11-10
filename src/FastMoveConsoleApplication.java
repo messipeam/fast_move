@@ -9,5 +9,8 @@
  * @author praisan
  */
 public class FastMoveConsoleApplication {
-    
+
+    public int createBike(){
+        
+    }
 }
