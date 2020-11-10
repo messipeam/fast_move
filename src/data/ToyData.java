@@ -2,6 +2,7 @@ package data;
 
 import base.Bike;
 import base.Parcel;
+import base.ParcelStatus;
 import base.Person;
 
 public class ToyData {
@@ -9,6 +10,9 @@ public class ToyData {
     public static Bike[] getBikes() {
         Bike[] bikes = new Bike[3];
         // your code
+        for (int i = 0; i < bikes.length; i++) {
+            bikes[i] = new Bike("ff",1);
+        }
 
         return bikes;
     }
@@ -16,14 +20,19 @@ public class ToyData {
     public static Person[] getPerson() {
         Person[] person = new Person[3];
         // your code
-
+        for (int i = 0; i < person.length; i++) {
+            person[i] = new Person("ff","aa");
+        }
         return person;
     }
 
     public static Parcel[] getParcels() {
         Parcel[] parcels = new Parcel[10];
         // your code
-
+        for (int i = 0; i < parcels.length; i++) {
+            parcels[i] = new Parcel(1.00,ParcelStatus.DELIVERED);
+        }
+        // hrllo eotlf
         return parcels;
     }
 
@@ -32,6 +41,7 @@ public class ToyData {
         printBike();
         printPerson();
         printParcels();
+
     }
 
     private static void printBike() {
