@@ -1,6 +1,7 @@
 package data;
 
 import base.Bike;
+import base.Location;
 import base.Parcel;
 import base.ParcelStatus;
 import base.Person;
@@ -11,7 +12,7 @@ public class ToyData {
         Bike[] bikes = new Bike[3];
         // your code
         for (int i = 0; i < bikes.length; i++) {
-            bikes[i] = new Bike("ff",1);
+            bikes[i] = new Bike("ff",200);
         }
 
         return bikes;
@@ -30,7 +31,7 @@ public class ToyData {
         Parcel[] parcels = new Parcel[10];
         // your code
         for (int i = 0; i < parcels.length; i++) {
-            parcels[i] = new Parcel(1.00,ParcelStatus.DELIVERED);
+            parcels[i] = new Parcel(1.00,ParcelStatus.DELIVERED,new Location(05.00, 0.00));
         }
         // hrllo eotlf
         return parcels;
