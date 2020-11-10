@@ -1,13 +1,14 @@
 package base;
 
 public class StreamingStat {
+
     String name;
     private double sum, max, min, lastValue;
     private int n;
 
     public StreamingStat(String name) {
-        this.name=name;
-        this.sum=0;
+        this.name = name;
+        this.sum = 0;
         this.max = 0;
         this.min = Double.POSITIVE_INFINITY;
         this.lastValue = 0;
@@ -21,8 +22,9 @@ public class StreamingStat {
         updateMax();
         updateMin();
     }
+
     private void updateSum() {
-        this.sum+=lastValue;
+        this.sum += lastValue;
     }
 
     private void updateMax() {
@@ -42,7 +44,7 @@ public class StreamingStat {
     }
 
     public double getMean() {
-        return this.sum/this.n;
+        return this.sum / this.n;
     }
 
     public double getMax() {
